@@ -1,10 +1,19 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      context:
+        description: 'Application to Build'
+        required: true
+        default: 'tiny-event-sourcing-lib'
+        type: choice
+        options:
+        - tiny-event-sourcing-lib
+        - tiny-event-sourcing-spring-app
+        - tiny-event-sourcing-spring-boot-starter
+        - tiny-mongo-event-store
+        - tiny-mongo-event-store-spring-boot-starter
 
 jobs:
   build:
@@ -22,5 +31,5 @@ jobs:
         cache: maven
         
     - name: Build with Maven
-      working-directory: ./tiny-event-sourcing-lib
+      working-directory: ./${{ inputs.context }}
       run: mvn -B package --file pom.xml
