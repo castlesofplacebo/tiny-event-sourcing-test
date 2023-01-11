@@ -30,7 +30,7 @@
         <dependency>
             <artifactId>tiny-event-sourcing-lib</artifactId>
             <groupId>ru.quipy</groupId>
-            <version>${project.version}</version>
+            <version>2.2.1</version>
         </dependency>
 
         <dependency>
