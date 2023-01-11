@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <version>${kotlin.version}</version>
+                <version>1.6.10</version>
                 <executions>
                     <execution>
                         <id>compile</id>
@@ -76,7 +76,7 @@
                     <dependency>
                         <groupId>org.jetbrains.kotlin</groupId>
                         <artifactId>kotlin-maven-allopen</artifactId>
-                        <version>${kotlin.version}</version>
+                        <version>1.6.10</version>
                     </dependency>
                 </dependencies>
             </plugin>
