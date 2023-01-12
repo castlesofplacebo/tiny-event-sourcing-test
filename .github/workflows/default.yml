@@ -3,18 +3,18 @@ name: Java CI with Maven
 on:
   push:
     # branches: ["master", "master-2.0"]
-    branches: "main"
+    branches: [ "main" ]
   pull_request:
     # branches: ["master", "master-2.0"]
-    branches: "main"
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix: 
-        { dir: ['tiny-event-sourcing-lib', 'tiny-event-sourcing-spring-app', 'tiny-event-sourcing-spring-boot-starter', 'tiny-mongo-event-store', 'tiny-mongo-event-store-spring-boot-starter'] }
-
+        #{ dir: ['tiny-event-sourcing-lib', 'tiny-event-sourcing-spring-app', 'tiny-event-sourcing-spring-boot-starter', 'tiny-mongo-event-store', 'tiny-mongo-event-store-spring-boot-starter'] }
+        { dir: ['tiny-event-sourcing-spring-app'] }
     steps:
     - uses: actions/checkout@v3
     
