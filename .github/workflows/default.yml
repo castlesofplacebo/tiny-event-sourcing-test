@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
       
-    - name: Deploy Snapshot Version with Maven
+    - name: Build Snapshot Version with Maven
       working-directory: ${{ matrix.dir }}
       run: mvn clean install
 
