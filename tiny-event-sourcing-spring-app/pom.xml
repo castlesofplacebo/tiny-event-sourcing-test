@@ -18,7 +18,10 @@
         <kotlinx-coroutines-core.version>1.5.2</kotlinx-coroutines-core.version>
         <awaitility.version>4.2.0</awaitility.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
+        <tiny-event-sourcing-spring-boot-starter.version>2.2.2</tiny-event-sourcing-spring-boot-starter.version>
+        <tiny-mongo-event-store-spring-boot-starter.version>2.2.2</tiny-mongo-event-store-spring-boot-starter.version>
     </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -35,13 +38,13 @@
         <dependency>
             <artifactId>tiny-event-sourcing-spring-boot-starter</artifactId>
             <groupId>ru.quipy</groupId>
-            <version>2.2.2</version>
+            <version>${tiny-event-sourcing-spring-boot-starter.version}</version>
         </dependency>
 
         <dependency>
             <artifactId>tiny-mongo-event-store-spring-boot-starter</artifactId>
             <groupId>ru.quipy</groupId>
-            <version>2.2.2</version>
+            <version>${tiny-mongo-event-store-spring-boot-starter.version}</version>
         </dependency>
 
         <dependency>
