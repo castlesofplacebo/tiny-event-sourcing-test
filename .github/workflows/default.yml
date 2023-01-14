@@ -17,7 +17,7 @@ jobs:
       matrix: 
         # TODO - uncomment
         #{ dir: ['tiny-event-sourcing-lib', 'tiny-event-sourcing-spring-app', 'tiny-event-sourcing-spring-boot-starter', 'tiny-mongo-event-store', 'tiny-mongo-event-store-spring-boot-starter'] }
-        { dir: ['tiny-event-sourcing-spring-boot-starter'] }
+        { dir: ['tiny-mongo-event-store'] }
     steps:
     - uses: actions/checkout@v3
     
