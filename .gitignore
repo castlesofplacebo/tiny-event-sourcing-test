@@ -1,1 +1,17 @@
 .vscode
+
+# Project exclude paths
+**/target/
+*.iml
+/.idea/
+# IDEA files
+
+.idea/libraries/**
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/kotlinc.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/modules.xml
+
+**/*.iml
