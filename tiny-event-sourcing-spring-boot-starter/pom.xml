@@ -36,8 +36,8 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.verion>1.6.10</kotlin.verion>
         <!-- PAY ATTENTION STARTS-->
+        <kotlin.verion>1.6.10</kotlin.verion>
         <tiny-event-sourcing-lib.version>2.2.2</tiny-event-sourcing-lib.version>
         <!-- PAY ATTENTION ENDS-->
     </properties>

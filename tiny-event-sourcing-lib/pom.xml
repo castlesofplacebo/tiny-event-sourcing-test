@@ -33,7 +33,9 @@
     <!-- PAY ATTENTION ENDS-->
     
     <properties>
+        <!-- PAY ATTENTION STARTS-->
         <kotlin.version>1.6.21</kotlin.version>
+        <!-- PAY ATTENTION ENDS-->
         <jackson-core.version>2.13.3</jackson-core.version>
         <kotlinx-coroutines-core.version>1.5.2</kotlinx-coroutines-core.version>
         <jackson-module-kotlin.version>2.12.2</jackson-module-kotlin.version>
