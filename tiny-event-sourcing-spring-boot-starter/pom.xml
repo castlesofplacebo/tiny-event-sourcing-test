@@ -4,17 +4,39 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tiny-event-sourcing-spring-boot-starter</artifactId>
-    <groupId>ru.quipy</groupId>
-    <version>2.2.1-SNAPSHOT</version>
-
+    <!-- PAY ATTENTION STARTS-->
     <name>tiny-event-sourcing-spring-boot-starter</name>
     <description>Tiny event sourcing spring boot starter</description>
+    <developers>
+        <developer>
+            <name>
+                Jalal Naghiyev
+            </name>
+        </developer>
+        <developer>
+            <name>
+                Andrey Sukhovitsky
+            </name>
+        </developer>
+        <developer>
+            <name>
+                Sevastyan Trutnev
+            </name>
+        </developer>
+    </developers>
+    <url>https://github.com/andrsuh/tiny-event-sourcing/tree/master-2.0/tiny-event-sourcing-spring-boot-starter</url>
+    <scm><url>https://github.com/andrsuh/tiny-event-sourcing/tree/master-2.0/tiny-event-sourcing-spring-boot-starter</url></scm>
+    <licenses><license><name>Apache License 2.0</name></license></licenses>
+    <groupId>ru.quipy</groupId>
+    <artifactId>tiny-event-sourcing-spring-boot-starter</artifactId>
+    <version>2.2.1-SNAPSHOT</version>
+    <!-- PAY ATTENTION ENDS-->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tiny-event-sourcing-lib.version>2.2.2</tiny-event-sourcing-lib.version>
     </properties>
 
     <dependencyManagement>
@@ -33,7 +55,7 @@
         <dependency>
             <artifactId>tiny-event-sourcing-lib</artifactId>
             <groupId>ru.quipy</groupId>
-            <version>2.2.2</version>
+            <version>${tiny-event-sourcing-lib.version}</version>
         </dependency>
 
         <dependency>
