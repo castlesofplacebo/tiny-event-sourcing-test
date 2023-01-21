@@ -2,13 +2,9 @@ name: Java CI with Maven
 
 on:
   push:
-    # TODO - uncomment
-    # branches: ["master", "master-2.0"]
-    branches: [ "main" ]
+    branches: ["master", "master-2.0"]
   pull_request:
-    # TODO - uncomment
-    # branches: ["master", "master-2.0"]
-    branches: [ "main" ]
+    branches: ["master", "master-2.0"]
 
 jobs:
   build:
@@ -25,12 +21,11 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-      
-    - name: Build Snapshot Version with Maven
-      working-directory: ${{ matrix.dir }}
-      run: mvn clean install
+        server-id: ossrh
+        server-username: ${{ secrets.OSSRH_USERNAME }}
+        server-password: ${{ secrets.OSSRH_TOKEN }}
+        gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
 
-    # TODO - paste instead of previous step
-    # - name: Deploy Snapshot Version with Maven
-    #   working-directory: ${{ matrix.dir }}
-    #   run: mvn -B clean deploy -P release
+    - name: Deploy Snapshot Version with Maven
+      working-directory: ${{ matrix.dir }}
+      run: mvn -B clean deploy -P release
